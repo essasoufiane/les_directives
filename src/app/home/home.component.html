@@ -1,9 +1,11 @@
+<!-- directive ngIf -->
 <div class="box" *ngIf="isDisplayBox">
 
 </div>
-<button
-*ngIf="!isDisplayBox"
-(click)="hideBox()">open</button>
-<button
-*ngIf="isDisplayBox"
-(click)="hideBox()">close</button>
+<button *ngIf="!isDisplayBox" (click)="hideBox()">open</button>
+<button *ngIf="isDisplayBox" (click)="hideBox()">close</button>
+
+<!-- directives ngFor -->
+<ul>
+  <li *ngFor="let item of items"><a href="#">{{item}}</a></li>
+</ul>
