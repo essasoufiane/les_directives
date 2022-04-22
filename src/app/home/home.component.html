@@ -1,1 +1,9 @@
-<p>home works!</p>
+<div class="box" *ngIf="isDisplayBox">
+
+</div>
+<button
+*ngIf="!isDisplayBox"
+(click)="hideBox()">open</button>
+<button
+*ngIf="isDisplayBox"
+(click)="hideBox()">close</button>
