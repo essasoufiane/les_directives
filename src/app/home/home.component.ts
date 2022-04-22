@@ -9,8 +9,10 @@ export class HomeComponent implements OnInit {
   isDisplayBox: boolean = true
 
   constructor() { }
-  
+
   items: string[] = ['home','products','blog','contact']
+
+  error: boolean = true
 
   ngOnInit(): void {
   }
